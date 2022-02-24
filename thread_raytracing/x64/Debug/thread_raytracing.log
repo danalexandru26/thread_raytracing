@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\VisualCProjects\thread_raytracing\thread_raytracing\Source.cpp(189,23): warning C4018: '<': signed/unsigned mismatch
+  thread_raytracing.vcxproj -> D:\VisualCProjects\thread_raytracing\x64\Debug\thread_raytracing.exe

@@ -1,0 +1,206 @@
+P3
+1920 1080
+255
+
+SAMPLE 0
+Sequential: 17922.8
+Parallel: 7026.09
+
+SAMPLE 1
+Sequential: 17954.8
+Parallel: 6982.47
+
+SAMPLE 2
+Sequential: 17873.6
+Parallel: 6953.47
+
+SAMPLE 3
+Sequential: 17822.7
+Parallel: 6938.9
+
+SAMPLE 4
+Sequential: 17719.6
+Parallel: 6911.67
+
+SAMPLE 5
+Sequential: 17722
+Parallel: 6911.55
+
+SAMPLE 6
+Sequential: 17719.6
+Parallel: 6925.7
+
+SAMPLE 7
+Sequential: 17782.4
+Parallel: 6939.57
+
+SAMPLE 8
+Sequential: 17990.6
+Parallel: 6963.51
+
+SAMPLE 9
+Sequential: 18033.8
+Parallel: 6964.96
+
+SAMPLE 10
+Sequential: 17823.4
+Parallel: 6977.96
+
+SAMPLE 11
+Sequential: 17853.4
+Parallel: 6950.02
+
+SAMPLE 12
+Sequential: 17789.3
+Parallel: 6926.41
+
+SAMPLE 13
+Sequential: 17857
+Parallel: 6897.33
+
+SAMPLE 14
+Sequential: 17802.3
+Parallel: 6966.15
+
+SAMPLE 15
+Sequential: 17828.4
+Parallel: 6959.66
+
+SAMPLE 16
+Sequential: 17759.1
+Parallel: 6910.72
+
+SAMPLE 17
+Sequential: 18181.8
+Parallel: 7021.32
+
+SAMPLE 18
+Sequential: 17864.7
+Parallel: 7028.11
+
+SAMPLE 19
+Sequential: 17917.8
+Parallel: 7057.37
+
+SAMPLE 20
+Sequential: 18231.5
+Parallel: 7172.86
+
+SAMPLE 21
+Sequential: 17922.9
+Parallel: 6962.79
+
+SAMPLE 22
+Sequential: 17877.5
+Parallel: 6961.36
+
+SAMPLE 23
+Sequential: 17895.6
+Parallel: 6997.46
+
+SAMPLE 24
+Sequential: 17985.9
+Parallel: 6989.12
+
+SAMPLE 25
+Sequential: 17882.5
+Parallel: 6960.76
+
+SAMPLE 26
+Sequential: 17888.5
+Parallel: 6962.42
+
+SAMPLE 27
+Sequential: 17838.3
+Parallel: 7013.2
+
+SAMPLE 28
+Sequential: 17963.9
+Parallel: 6911.01
+
+SAMPLE 29
+Sequential: 17710.2
+Parallel: 6964.41
+
+SAMPLE 30
+Sequential: 17956.4
+Parallel: 7000.97
+
+SAMPLE 31
+Sequential: 17998.1
+Parallel: 6962.37
+
+SAMPLE 32
+Sequential: 17861
+Parallel: 6972.29
+
+SAMPLE 33
+Sequential: 17971.8
+Parallel: 6922.46
+
+SAMPLE 34
+Sequential: 17786.9
+Parallel: 6925.82
+
+SAMPLE 35
+Sequential: 17779.7
+Parallel: 6927.43
+
+SAMPLE 36
+Sequential: 17769.5
+Parallel: 6974.91
+
+SAMPLE 37
+Sequential: 17707.3
+Parallel: 6886.45
+
+SAMPLE 38
+Sequential: 17703.1
+Parallel: 6891.16
+
+SAMPLE 39
+Sequential: 17674.1
+Parallel: 6880.4
+
+SAMPLE 40
+Sequential: 17722.7
+Parallel: 6923.79
+
+SAMPLE 41
+Sequential: 17753.7
+Parallel: 6932.67
+
+SAMPLE 42
+Sequential: 17779.3
+Parallel: 6922.2
+
+SAMPLE 43
+Sequential: 17776.3
+Parallel: 6924.84
+
+SAMPLE 44
+Sequential: 17767.1
+Parallel: 6892.05
+
+SAMPLE 45
+Sequential: 17782.2
+Parallel: 6917.75
+
+SAMPLE 46
+Sequential: 17777.5
+Parallel: 6921.27
+
+SAMPLE 47
+Sequential: 17757
+Parallel: 6923.69
+
+SAMPLE 48
+Sequential: 17837.2
+Parallel: 6937.5
+
+SAMPLE 49
+Sequential: 17779.6
+Parallel: 6922
+
+Parallel average: 6953.41
+Sequential average: 17847.1

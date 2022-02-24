@@ -1,0 +1,43 @@
+
+SAMPLE 0
+Sequential: 0
+Parallel: 12475.3
+
+Parallel average: 12475.3
+Sequential average: 0ge: 0.0001P3
+2560 1440
+255
+SAMPLE 2
+Sequential: 6942.45
+Parallel: 6921.62
+
+SAMPLE 3
+Sequential: 6948.08
+Parallel: 6918.15
+
+SAMPLE 4
+Sequential: 6939.92
+Parallel: 6922.64
+
+SAMPLE 5
+Sequential: 6942.71
+Parallel: 6927.93
+
+SAMPLE 6
+Sequential: 6936.24
+Parallel: 6918.45
+
+SAMPLE 7
+Sequential: 6941.53
+Parallel: 6923.15
+
+SAMPLE 8
+Sequential: 6942.06
+Parallel: 6922.14
+
+SAMPLE 9
+Sequential: 6948.63
+Parallel: 6920.08
+
+Parallel average: 6923.94
+Sequential average: 6968.3
