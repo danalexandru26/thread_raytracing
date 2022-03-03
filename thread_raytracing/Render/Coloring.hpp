@@ -11,6 +11,8 @@ namespace render {
 	{
 		auto scale = 1.0f / 100.0f;
 
-		os << static_cast<int>(255.99 * clamp(pixel.x() * scale, 0.0f, 0.999f)) << ' ' << static_cast<int>(255.99 * clamp(pixel.y() * scale , 0.0f, 0.999f)) << ' ' << static_cast<int>(255.99 * clamp(pixel.z() * scale , 0.0f, 0.999f)) << '\n';
+		os << static_cast<int>(255.99 * clamp(pixel.x() * scale, 0.0f, 0.999f)) << ' ' 
+		   << static_cast<int>(255.99 * clamp(pixel.y() * scale, 0.0f, 0.999f)) << ' ' 
+		   << static_cast<int>(255.99 * clamp(pixel.z() * scale, 0.0f, 0.999f)) << '\n';
 	}
 }
