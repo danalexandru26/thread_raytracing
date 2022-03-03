@@ -31,10 +31,8 @@ namespace math
 
 		T length() const;
 		T length_squared() const;
-
 	private:
 		void swap(vec3& lhs, vec3& rhs);
-
 	public:
 		T data[3];
 	};
