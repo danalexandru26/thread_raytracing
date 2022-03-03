@@ -11,7 +11,6 @@ namespace math
 		camera(float viewport_height, float viewport_width, float focal_length);
 
 		ray emit(float u, float v);
-
 	private:
 		vec3<float> horizontal;
 		vec3<float> vertical;
