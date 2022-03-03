@@ -20,6 +20,7 @@ namespace render {
 		{
 			return 0.5f * (rec.normal + vec3<float>(1.0f));
 		}
+		
 		auto unitd = unit(r.direction);
 		auto t = 0.5f * (unitd.y() + 1.0f);
 		return (1.0f - t) * vec3<float>(1.0f, 1.0f, 1.0f) + t * vec3<float>(0.6f, 0.3f, 1.0f);
