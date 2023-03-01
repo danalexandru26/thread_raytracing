@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\thread_raytracing",
+    "\\thread_raytracing\\Debug",
+    "\\thread_raytracing\\Math",
+    "\\thread_raytracing\\Math\\Camera",
+    "\\thread_raytracing\\Math\\Container",
+    "\\thread_raytracing\\Math\\Geometry",
+    "\\thread_raytracing\\Math\\Ray",
+    "\\thread_raytracing\\Math\\Utilities",
+    "\\thread_raytracing\\Math\\Vector"
+  ],
+  "SelectedNode": "\\.gitignore",
+  "PreviewInSolutionExplorer": false
+}

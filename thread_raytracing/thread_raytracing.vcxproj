@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Math\Camera\Camera.cpp" />
+    <ClCompile Include="Math\Container\Block.cpp" />
     <ClCompile Include="Math\Container\List.cpp" />
     <ClCompile Include="Math\Geometry\Sphere.cpp" />
     <ClCompile Include="Math\Ray\Ray.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Math\Container\Block.hpp" />
     <ClInclude Include="Math\Container\List.hpp" />
     <ClInclude Include="Math\Camera\Camera.hpp" />
     <ClInclude Include="Math\Geometry\mesh.hpp" />

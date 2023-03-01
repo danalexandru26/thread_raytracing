@@ -1,8 +1,9 @@
-﻿  Source.cpp
-D:\VisualCProjects\thread_raytracing\thread_raytracing\Source.cpp(171,23): warning C4018: '<': signed/unsigned mismatch
+﻿  Block.cpp
+  Source.cpp
+C:\Users\alexandru\source\repos\danalexandru26\thread_raytracing\thread_raytracing\Parallel\Thread_pool.hpp(43,23): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  2 of 838 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  104 of 840 functions (12.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+    56 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  thread_raytracing.vcxproj -> D:\VisualCProjects\thread_raytracing\x64\Release\thread_raytracing.exe
+  thread_raytracing.vcxproj -> C:\Users\alexandru\Source\Repos\danalexandru26\thread_raytracing\x64\Release\thread_raytracing.exe
