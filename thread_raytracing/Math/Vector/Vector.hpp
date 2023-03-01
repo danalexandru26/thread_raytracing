@@ -1,7 +1,6 @@
 #pragma once
 #include<iostream>
 
-
 namespace math
 {
 	template<typename T>

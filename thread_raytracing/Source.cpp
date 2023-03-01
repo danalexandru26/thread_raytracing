@@ -81,7 +81,7 @@ void work_stripes(int m)
 			auto v = (j + random_float()) / (width - 1.0f);
 
 			auto r = cam.emit(u, v);
-			pixel += compute(r, world);
+			pixel += compute(r, world, 6);
 		}
 		tiles_s[m].chunk[j] = pixel;
 	}
@@ -101,7 +101,7 @@ void work_blocks(int loc_i, int loc_j, int m)
 				auto v = (loc_j * 120 + j + random_float()) / (width - 1.0f);
 
 				auto r = cam.emit(u, v);
-				pixel += compute(r, world);
+				pixel += compute(r, world, 6);
 			}
 			tiles[m].chunk[++count] = pixel;
 		}
@@ -120,7 +120,7 @@ void work_sequential(vec3<float>* pixels)
 				auto v = (j + random_float()) / (width - 1.0f);
 
 				auto r = cam.emit(u, v);
-				pixel += compute(r, world);
+				pixel += compute(r, world, 6);
 			}
 			pixels[i * width + j] = pixel;
 		}

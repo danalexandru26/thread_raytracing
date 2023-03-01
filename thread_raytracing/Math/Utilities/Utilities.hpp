@@ -37,9 +37,20 @@ namespace math
 		return distribution(generator);
 	}
 
-	float random_float(float min, float max)
+	float random_float(float minimum, float maximum)
 	{
-		return min + (max - min) * random_float();
+		return minimum + (maximum - minimum) * random_float();
+	}
+
+	float random_double() {
+		static std::uniform_real_distribution<float> distribution_double(0.0f, 1.0f);
+		static std::mt19937 generator_double;
+
+		return distribution_double(generator_double);
+	}
+
+	float random_double(int minimum, int maximum) {
+		return minimum + (maximum - minimum) * random_double();
 	}
 
 	float clamp(float value, float min, float max)
@@ -53,5 +64,21 @@ namespace math
 			return max;
 		}
 		return value;
+	}
+
+	vec3 <float> random() {
+		return vec3<float>(random_float(), random_float(), random_float());
+	}
+
+	vec3<float> random(float minimum, float maximum) {
+		return vec3<float>(random_float(minimum, maximum), random_float(minimum, maximum), random_float(minimum, maximum));
+	}
+
+	vec3<float> random_in_sphere() {
+		while (true) {
+			auto vec = random(-1, 1);
+			if (vec.length_squared() >= 1)continue;
+			return vec;
+		}
 	}
 }
