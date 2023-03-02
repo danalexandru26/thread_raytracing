@@ -19,7 +19,7 @@ namespace math
 				objects.push_back(object);
 			}
 
-			bool list::hit(const ray& r, float min, float max, record& rec) const
+			bool list::hit(const ray& r, double min, double max, record& rec) const
 			{
 				record t_record;
 				auto any_hit = false;

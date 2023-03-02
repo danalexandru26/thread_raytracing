@@ -12,18 +12,23 @@ using namespace math::geometry::container;
 
 namespace render {
 
-	vec3<float> compute(const ray& r, list& world, int reflections)
+	vec3<double> compute(const ray& r, list& world, int reflections)
 	{
 		record rec;
-		if (reflections <= 0)return vec3<float>(0.0f, 0.0f, 0.0f);
+		if (reflections <= 0)return vec3<double>(0.0);
 
-		if (world.hit(r, 0.0f, 10000000000.0f, rec)) {
-			vec3<float> target = rec.point + rec.normal + random_in_sphere();
-			return 0.5f * compute(ray(rec.point, target - rec.point), world, reflections -1);
+		if (world.hit(r, 0.0, 10000000000.0, rec)) {
+			ray scatter;
+			vec3<double> attenuation;
+
+			if (rec.mat->scatter(r, rec, attenuation, scatter)) {
+				return attenuation * compute(scatter, world, reflections - 1);
+			}
+			return vec3<double>(0.0);
 		}
 		
 		auto unitd = unit(r.direction);
-		auto t = 0.5f * (unitd.y() + 1.0f);
-		return (1.0f - t) * vec3<float>(1.0f, 1.0f, 1.0f) + t * vec3<float>(0.6f, 0.3f, 1.0f);
+		auto t = 0.5 * (unitd.y() + 1.0);
+		return (1.0 - t) * vec3<double>(1.0, 1.0, 1.0) + t * vec3<double>(0.5, 0.5, 0.7);
 	}
 }

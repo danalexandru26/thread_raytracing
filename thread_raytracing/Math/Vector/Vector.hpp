@@ -24,6 +24,8 @@ namespace math
 		template<typename Q>
 		vec3& operator*=(Q scalar);
 
+		bool near_zero() const;
+
 		T x();
 		T y();
 		T z();
@@ -66,5 +68,8 @@ namespace math
 
 	template<typename T>
 	vec3<T> unit(const vec3<T>& lhs);
+
+	template<typename T>
+	vec3<T> reflect(const vec3<T>& v, const vec3<T> n);
 }
 #include"Vector.inl"

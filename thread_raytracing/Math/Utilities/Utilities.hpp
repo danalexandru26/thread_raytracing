@@ -2,7 +2,7 @@
 
 #include<random>
 
-namespace math
+namespace utilities
 {
 	class timer
 	{
@@ -29,31 +29,20 @@ namespace math
 		static std::chrono::steady_clock::time_point end;
 	};
 
-	float random_float()
+	double random_double()
 	{
-		static std::uniform_real_distribution<float> distribution(0.0f, 1.0f);
+		static std::uniform_real_distribution<double> distribution(0.0, 1.0);
 		static std::mt19937 generator;
 
 		return distribution(generator);
 	}
 
-	float random_float(float minimum, float maximum)
+	double random_double(double minimum, double maximum)
 	{
-		return minimum + (maximum - minimum) * random_float();
-	}
-
-	float random_double() {
-		static std::uniform_real_distribution<float> distribution_double(0.0f, 1.0f);
-		static std::mt19937 generator_double;
-
-		return distribution_double(generator_double);
-	}
-
-	float random_double(int minimum, int maximum) {
 		return minimum + (maximum - minimum) * random_double();
 	}
 
-	float clamp(float value, float min, float max)
+	double clamp(double value, double min, double max)
 	{
 		if (value < min)
 		{
@@ -66,19 +55,23 @@ namespace math
 		return value;
 	}
 
-	vec3 <float> random() {
-		return vec3<float>(random_float(), random_float(), random_float());
+	vec3 <double> random() {
+		return vec3<double>(random_double(), random_double(), random_double());
 	}
 
-	vec3<float> random(float minimum, float maximum) {
-		return vec3<float>(random_float(minimum, maximum), random_float(minimum, maximum), random_float(minimum, maximum));
+	vec3<double> random(double minimum, double maximum) {
+		return vec3<double>(random_double(minimum, maximum), random_double(minimum, maximum), random_double(minimum, maximum));
 	}
 
-	vec3<float> random_in_sphere() {
+	vec3<double> random_in_sphere() {
 		while (true) {
-			auto vec = random(-1, 1);
+			auto vec = random(-1.0, 1.0);
 			if (vec.length_squared() >= 1)continue;
 			return vec;
 		}
+	}
+
+	vec3<double> random_unit_vector() {
+		return unit(random_in_sphere());
 	}
 }

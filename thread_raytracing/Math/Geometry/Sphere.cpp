@@ -9,11 +9,11 @@ namespace math
 			:radius{}, center{}
 		{}
 
-		sphere::sphere(float radius, vec3<float> center)
-			:radius{radius}, center{center}
+		sphere::sphere(double radius, vec3<double> center, std::shared_ptr<material> mat)
+			:radius{radius}, center{center}, mat{mat}
 		{}
 
-		bool sphere::hit(const ray& r, float min, float max, record& rec) const
+		bool sphere::hit(const ray& r, double min, double max, record& rec) const
 		{
 			auto ac = r.origin - center;
 
@@ -22,19 +22,16 @@ namespace math
 			auto c = ac.length_squared() - radius * radius;
 
 			auto delta = b * b - a * c;
-			if (delta < 0)
-			{
+			if (delta < 0) {
 				return false;
 			}
 
 			auto delta_s = std::sqrt(delta);
 			auto root = (- b - delta_s) / a;
 
-			if (root < min || root > max)
-			{
+			if (root < min || root > max) {
 				root = (-b + delta_s) / a;
-				if (root < min || root > max)
-				{
+				if (root < min || root > max) {
 					return false;
 				}
 			}
@@ -43,6 +40,7 @@ namespace math
 			rec.point = r.at(root);
 			auto c_normal = (rec.point - center) / radius;
 			rec.set_normal(r, c_normal);
+			rec.mat = mat;
 
 			return true;
 		}

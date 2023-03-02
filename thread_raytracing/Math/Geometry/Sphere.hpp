@@ -11,13 +11,14 @@ namespace math
 		{
 		public:
 			sphere();
-			sphere(float radius, vec3<float> center);
+			sphere(double radius, vec3<double> center, std::shared_ptr<material> mat);
 
-			virtual bool hit(const ray& r, float min, float max, record& rec) const;
+			virtual bool hit(const ray& r, double min, double max, record& rec) const;
 
 		private:
-			float radius;
-			vec3<float> center;
+			double radius;
+			vec3<double> center;
+			std::shared_ptr<material> mat;
 		};
 	}
 }

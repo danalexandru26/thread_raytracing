@@ -21,7 +21,7 @@ namespace math
 
 				void add(std::shared_ptr<mesh> object);
 
-				bool hit(const ray& r, float min, float max, record& rec) const;
+				bool hit(const ray& r, double min, double max, record& rec) const;
 
 			private:
 				std::vector<std::shared_ptr<mesh>> objects;

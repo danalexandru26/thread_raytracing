@@ -99,6 +99,12 @@ namespace math
 		return data[0] * data[0] + data[1] * data[1] + data[2] * data[2];
 	}
 
+	template<typename T>
+	bool vec3<T>::near_zero() const {
+		auto s = 1e-8;
+		return (fabs(data[0]) < s) && (fabs(data[1]) < s) && (fabs(data[2]) < s);
+	}
+
 
 	template<typename T>
 	bool operator==(const vec3<T>& lhs, const vec3<T>& rhs)
@@ -189,5 +195,11 @@ namespace math
 	vec3<T> unit(const vec3<T>& lhs)
 	{
 		return lhs / lhs.length();
+	}
+
+
+	template<typename T>
+	vec3<T> reflect(const vec3<T>& v, const vec3<T> n) {
+		return v - 2 * dot(v, n) * n;
 	}
 }

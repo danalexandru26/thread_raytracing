@@ -1,9 +1,9 @@
 #include"Block.hpp"
 
 block::block() {
-	chunk = std::vector < vec3<float>>();
+	chunk = std::vector < vec3<double>>();
 }
 
 block::block(int size) {
-	chunk = std::vector<vec3<float>>(size);
+	chunk = std::vector<vec3<double>>(size);
 }

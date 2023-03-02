@@ -8,13 +8,13 @@ namespace math
 	class camera
 	{
 	public:
-		camera(float viewport_height, float viewport_width, float focal_length);
+		camera(double viewport_height, double viewport_width, double focal_length);
 
-		ray emit(float u, float v);
+		ray emit(double u, double v);
 	private:
-		vec3<float> horizontal;
-		vec3<float> vertical;
-		vec3<float> lcorner;
-		vec3<float> origin;
+		vec3<double> horizontal;
+		vec3<double> vertical;
+		vec3<double> lcorner;
+		vec3<double> origin;
 	};
 }

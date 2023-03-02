@@ -6,12 +6,12 @@ namespace math {
 	struct ray
 	{
 		ray();
-		ray(vec3<float> direction);
-		ray(vec3<float> direction, vec3<float> origin);
+		ray(vec3<double> direction);
+		ray(vec3<double> origin, vec3<double> direction);
 
-		vec3<float> at(float t) const;
+		vec3<double> at(double t) const;
 
-		vec3<float> direction;
-		vec3<float> origin;
+		vec3<double> direction;
+		vec3<double> origin;
 	};
 }
